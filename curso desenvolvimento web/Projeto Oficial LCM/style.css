@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(245, 245, 245);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#logo{
+    width: 150px;
+    display: inline;
+
+    padding: 10px;
+}
+.cabe1{
+    display: inline;
+    text-align: center;
+    background-color:#ffffff;
+    z-index:4;
+}
+.cabecel{
+    padding-top: 11px;
+    text-align: center;
+    display: inline;
+    z-index:3;
+}
+.cabe{
+    position: fixed;
+    top: 0px;
+    left:0px ;
+    display: inline;
+    padding: 34px 0px 35px 30px;
+    text-align: center;
+    background-color:#ffffff;
+    z-index: 2;
+    border-bottom: rgb(35, 85, 6) solid 1px;
+}
+
+#TituloLogin{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    font-weight: 600; 
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left:0px ;
+    background-color:#ffffff;
+    width: 100%;
+    border-bottom: black solid 1px;
+    padding: 5px 0px 5px 0px;
+}
+
+
+#login{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px 05px 10px;
+    border: black solid 1px;
+    
+}
+
+#logoLogin{
+    width: 150px;
+    padding: 0px 50px 30px;
+    border-bottom: black solid 1px;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    height: 50px;
+}
+
+a{
+    padding: 5px;
+}
+
+a.disabled{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-bottom:#768d3c solid 3px !important;
+}
+
+a.menu{
+    margin: 0px 10px;
+}
+
+a.menu:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom:#d0f76e solid 3px;
+}
+
+a.menu:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom:#d0f76e solid 3px;
+}
+
+a.menu:hover{
+    text-decoration: none;
+    border-bottom: olivedrab solid 3px;
+    background: rgb(199, 199, 199);
+    color: black;
+}
+
+a.menu:active{
+    text-decoration: none;
+    border-bottom: rgb(59, 80, 18) solid 3px;
+    background: rgb(199, 199, 199);
+    color: black;
+}
+/*--------------------------------FIM DO HEADER------------------------------*/
+
+article{
+    margin-top: 90px;
+    z-index: 1 !important;
+}
+
+.corpo{
+    z-index: 0 !important;
+}
