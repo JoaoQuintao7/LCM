@@ -1,18 +1,26 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<limpando margem>>>>>>>>>>>>>>>>>>>>>*/
 *{
     padding: 0;
     margin: 0;
 }
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<limpando margem>>>>>>>>>>>>>>>>>>>>>*/
 
-body{
-    background: rgb(245, 245, 245);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cabeçalho>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*[HEADER]*/
+header{
+    background-color:#ffffff;
+    width: 100%;
+    border-bottom: black solid 1px;
+    padding: 5px 0px 5px 0px;
 }
+/*[HEADER]*/
+
 #logo{
     width: 150px;
     display: inline;
-
     padding: 10px;
 }
+
 .cabe1{
     display: inline;
     text-align: center;
@@ -24,65 +32,6 @@ body{
     text-align: center;
     display: inline;
     z-index:3;
-}
-.cabe{
-    position: fixed;
-    top: 0px;
-    left:0px ;
-    display: inline;
-    padding: 34px 0px 35px 30px;
-    text-align: center;
-    background-color:#ffffff;
-    z-index: 2;
-    border-bottom: rgb(35, 85, 6) solid 1px;
-}
-
-#TituloLogin{
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
-    font-weight: 600; 
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-}
-
-.clear{
-    clear: both;
-}
-
-header{
-    position: fixed;
-    top: 0px;
-    left:0px ;
-    background-color:#ffffff;
-    width: 100%;
-    border-bottom: black solid 1px;
-    padding: 5px 0px 5px 0px;
-}
-
-
-#login{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    width: 300px;
-    margin: auto;
-    margin-top: 100px;
-    padding: 40px 05px 10px;
-    border: black solid 1px;
-    
-}
-
-#logoLogin{
-    width: 150px;
-    padding: 0px 50px 30px;
-    border-bottom: black solid 1px;
-}
-
-#footer{
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding: 30px 0px 0px 0px;
-    height: 50px;
 }
 
 a{
@@ -125,13 +74,75 @@ a.menu:active{
     background: rgb(199, 199, 199);
     color: black;
 }
-/*--------------------------------FIM DO HEADER------------------------------*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<cabeçalho>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-article{
-    margin-top: 90px;
-    z-index: 1 !important;
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Definindo corpo>>>>>>>>>>>>>>>>>>>>>>>*/
+body{
+    background: rgb(245, 245, 245);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.corpo{
-    z-index: 0 !important;
+article{
+    margin: 5px 10px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Definindo corpo>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<login>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#login{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px 05px 10px;
+    border: black solid 1px;
+    
+}
+
+#logoLogin{
+    width: 150px;
+    padding: 0px 50px 30px;
+    border-bottom: black solid 1px;
+}
+
+#TituloLogin{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    font-weight: 600; 
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<login>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+#footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    height: 50px;
+}
+
+
+.verde{
+    background-color: chartreuse;
+}
+.azul{
+    background-color: darkblue;
+}
+
+.anexo{
+    width: 100%;
+}
+
+.observacao{
+    font-size: x-small;
+}
+
+
+th{
+    font-size:10px;
+}
+
+td{
+    font-size: 10px;
 }

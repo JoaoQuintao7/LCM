@@ -10,62 +10,237 @@
     <title>Login - Aprovações LCM</title>
 </head>
 <body>
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CABEÇALHO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
     <header>
         <div class="row">
-            <div class="cabe1 col-sm-12 col-md-3 col-lg-3 d-none d-lg-block">
-                <img id="logo" src="img/Logo sem frase.png" alt="logo" class="rounded">
-            </div>
+<!-----------------------------------[LOGO DO CABEÇALHO]--------------------------------------->       
+          <div class="cabe1 col-sm-12 col-md-3 col-lg-3 d-none d-lg-block">
+              <img id="logo" src="img/Logo sem frase.png" alt="logo" class="rounded">
+          </div>
+<!--------------------------------------------------------------------------------------------->
 
-            <div class="cabecel col-sm-12 col-md-8 col-lg-8 "> <!--falta 1 col-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
+<!-----------------------------------[MENU DO CABEÇALHO]--------------------------------------->
+          <div class="cabecel col-sm-12 col-md-8 col-lg-8 "> <!--falta 1 col-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="menu nav-item nav-link" href="index.html">HOME</a>
+                  <a class="menu nav-item nav-link disabled" href="#">CONTRATOS</a>
+                  <a class="menu nav-item nav-link" href="compra.html">COMPRAS</a>
+                  <a class="menu nav-item nav-link" href="requisicao.html">REQUISIÇÃO</a>
+                  <a class="menu nav-item nav-link" href="financeiro.html">FINANCEIRO</a>
+                  <a class="menu nav-item nav-link" href="fiscal.html">FISCAL</a>
+                  <a class="menu nav-item nav-link" href="medicao.html">MEDIÇÃO</a>
+                  <a class="menu nav-item nav-link" href="pedidos.html">PEDIDOS</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+<!--------------------------------------------------------------------------------------------->
+        </div>   
+    </header>
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CORPO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <article>
+      <div class="row">
+        <div class="col-sm-12 col-md-1 col-lg-1 d-none d-lg-block"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+
+          <form class="form-inline">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Numero">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Numero">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Numero">
+
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Aprovação</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Todos</option>
+              <option value="1">Aprovado</option>
+              <option value="2">Não Aprovado</option>
+            </select>
+            <button type="submit" class="btn btn-primary my-1">Enviar</button>
+          </form>
+          
+        </div>
+        <div class="col-sm-12 col-md-1 col-lg-1 d-none d-lg-block"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-0 col-md-1 col-lg-1 d-none d-lg-block">
+          
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-10 d-none d-lg-block">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">N°</th>
+                <th scope="col">Primeiro</th>
+                <th scope="col">Último</th>
+                <th scope="col">Nickname</th>
+                <th scope="col">Anexo</th>
+                <th scope="col">Aproção</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td >Otto</td>
+                <td >@mdo</td>
+                <td>
+                  <!-- Botão para acionar modal -->
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalLongoExemplo">
+                    ANEXO
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="menu nav-item nav-link" href="index.html">HOME</a>
-                      <a class="menu nav-item nav-link disabled" href="#">CONTRATOS</a>
-                      <a class="menu nav-item nav-link" href="compra.html">COMPRAS</a>
-                      <a class="menu nav-item nav-link" href="requisicao.html">REQUISIÇÃO</a>
-                      <a class="menu nav-item nav-link" href="financeiro.html">FINANCEIRO</a>
-                      <a class="menu nav-item nav-link" href="fiscal.html">FISCAL</a>
-                      <a class="menu nav-item nav-link" href="medicao.html">MEDIÇÃO</a>
-                      <a class="menu nav-item nav-link" href="pedidos.html">PEDIDOS</a>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="TituloModalLongoExemplo">Título do ANEXO</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/contrato.png" class="anexo" alt="Imagem responsiva">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-success">Salvar mudanças</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </nav>
-              </div>
-                <!--
-  
-            -->
-            <div class="clear"></div>
-        </div>
-        
-    </header>
+                </td>
+                <td>
+                  <form>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"></label>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>
+                   <!-- Botão para acionar modal -->
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalLongoExemplo">
+                    ANEXO
+                  </button>
 
-    <article>
-      aaa
-        <div class="corpo col-sm-12 col-md-12 col-lg-12">
-          aaa
+                  <!-- Modal -->
+                  <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="TituloModalLongoExemplo">Título do ANEXO</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/contrato.png" class="anexo" alt="Imagem responsiva">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-success">Salvar mudanças</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <form>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"></label>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>
+                  <!-- Botão para acionar modal -->
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ModalLongoExemplo">
+                    ANEXO
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="TituloModalLongoExemplo">Título do ANEXO</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/contrato.png" class="anexo" alt="Imagem responsiva">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-success">Salvar mudanças</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <form>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"></label>
+                    </div>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          bbb
+        <div class="col-sm-0 col-md1 col-lg-1 d-none d-lg-block">
+          
         </div>
-      </div><!--row-->      
+      </div>
+
+      <div class="row ">
+        <div class="col-sm-12 col-md-10 col-lg-10 d-lg-none">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          
+        </div>
+      </div>         
     </article>
-
-
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
     <br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br>
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<RODAPÉ>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
     <footer id="footer">
         <p>&copyjoao quintao</p>
     </footer>
-
-
+<!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
